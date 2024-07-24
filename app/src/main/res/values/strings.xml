@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Startwar Blaster</string>
+    <string name="score_placeholder">%1$s - %2$s</string>
+</resources>

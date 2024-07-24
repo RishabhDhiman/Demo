@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvPlayer1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="30"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp"
+        tools:text="Adam" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayer1"
+        app:layout_constraintEnd_toStartOf="@+id/tvPlayer2"
+        app:layout_constraintHorizontal_weight="30"
+        app:layout_constraintStart_toEndOf="@+id/tvPlayer1"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayer1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Hello World" />
+
+    <TextView
+        android:id="@+id/tvPlayer2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="40"
+        android:gravity="right"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayer1"
+        app:layout_constraintHorizontal_weight="30"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayer1"
+        tools:layout_editor_absoluteX="375dp"
+        tools:text="21" />
+
+</LinearLayout>
